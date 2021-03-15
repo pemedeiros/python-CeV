@@ -10,12 +10,14 @@ while True:
     if resposta == 1:
         #Listar
         lerarquivo(arq)
+        sleep(2)
     elif resposta == 2:
         #Cadastrar
         cabecalho('NOVO CADASTRO')
         nome = str(input('Nome:'))
         idade = leiaint('Idade: ')
         cadastrar(arq, nome, idade)
+        sleep(2)
     elif resposta == 3:
         cabecalho('Saindo do sistema...Até mais.')
         break
